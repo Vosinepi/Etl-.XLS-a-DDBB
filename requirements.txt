@@ -3,3 +3,5 @@ wget==3.2
 xlrd==2.0.1
 SQLAlchemy
 psycopg2==2.9.5
+google.cloud==0.34.0
+google_cloud_storage==2.6.0

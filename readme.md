@@ -17,6 +17,8 @@ Tener la capacidad de actualizar los datos en la base de datos al surgir nuevas 
 - [xlrd](https://pypi.org/project/xlrd/)
 - [SQLAlchemy](https://www.sqlalchemy.org/)
 - [psycopg2](https://pypi.org/project/psycopg2/)
+- [google.cloud.storage](https://pypi.org/project/google-cloud-storage/)
+- [google-cloud-storage](https://pypi.org/project/google-cloud-storage/)
 
 ## Uso
 
@@ -50,17 +52,37 @@ docker exec -it indice_aperturas_etl psql -h localhost -U postgres -W indice_ape
 pip install -r requirements.txt
 ```
 
-- cargar las credenciales de la base de datos en el archivo `credenciales_bbdd.py`
-- Ejecutar etl.py
+- cargar las credenciales de la base de datos en el archivo `cfg.py`
+- correr descarga.py para descargar el archivo XLS
+
+```
+python descarga.py
+```
+
+- correr transform.py para transformar los datos y crear los csvs
+
+```
+python transform.py
+```
+
+- correr querys.py para cargar los datos en la base de datos
+
+```
+python querys.py
+```
+
+- correr store_bucket_GCP.py para cargar los datos en el bucket de GCP
+
+```
+python store_bucket_GCP.py
+```
 
 ## Resultados
 
-- Normalizacion de datos obtenidos de los CSV
+- El archivo descargado es guardado en la carpeta `Data` en estado crudo, solo se le agrego la fecha de descarga.
+- Normalizacion de datos obtenidos, se crean CSVs por region para facilitar acceso a los datos. Se guardan en la carpeta `Dataframe`
 - Guardado de datos en una base de datos Postgresql
-
-## A futuro
-
-- Poder obtener los datos de una API de existir o mediante WEB scraping
+- Subida de CSVs y .xls crudo a un bucket de GCP
 
 ## Contacto
 
