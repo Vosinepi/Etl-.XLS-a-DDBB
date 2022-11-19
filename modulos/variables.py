@@ -10,6 +10,7 @@ fecha = dt.datetime.now().strftime("%Y-%m-%d")
 # path al archivo
 ipc_aperturas = rf"../Data_cruda/sh_ipc_aperturas_{fecha}.xls"
 
+# paths a los archivos que se subirán al bucket y a la base de datos
 region_gba = rf"../Dataframe/region_gba_{fecha}.csv"
 region_pampeana = rf"../Dataframe/region_pampeana_{fecha}.csv"
 region_noroeste = rf"../Dataframe/region_noroeste_{fecha}.csv"

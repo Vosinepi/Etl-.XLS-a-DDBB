@@ -4,6 +4,7 @@ from sqlalchemy import create_engine
 
 pd.set_option("display.max_columns", None)
 
+
 from variables import fecha
 from cfg import postgresql_config
 
@@ -47,7 +48,7 @@ db = create_engine(postgresql_config)
 conn = db.connect()
 
 
-# crear tablas / querys
+# crear / update tablas
 
 
 def crear_tabla_regiones():
