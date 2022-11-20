@@ -53,7 +53,7 @@ def print_interanual(region, top):
     df_interanual_final.iloc[0, :]
     df = pd.DataFrame(df_interanual_final.iloc[0, :])
     df = df.reset_index()
-    df = df.rename(columns={"index": "Indice", 0: "Variacion Porcentual"})
+    df = df.rename(columns={"index": "Indice Apertura", 0: "Variacion Porcentual"})
 
     print(f"Top {top} Indice Interanual de {fecha} para la {region} ")
 
