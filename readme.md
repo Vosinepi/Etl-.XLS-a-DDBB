@@ -77,9 +77,16 @@ python querys.py
 python store_bucket_GCP.py
 ```
 
+- correr interanual.py para obtener los datos interanuales por region:
+  'Region GBA', 'Region CABA', 'Region Cuyo', 'Region NEA', 'Region NOA', 'Region Patagonia'
+
+```
+python interanual.py
+```
+
 ## Resultados
 
-- El archivo descargado es guardado en la carpeta `Data` en estado crudo, solo se le agrego la fecha de descarga.
+- El archivo descargado es guardado en la carpeta `Data_cruda` en estado crudo, solo se le agrego la fecha de descarga.
 - Normalizacion de datos obtenidos, se crean CSVs por region para facilitar acceso a los datos. Se guardan en la carpeta `Dataframe`
 - Guardado de datos en una base de datos Postgresql
 - Subida de CSVs y .xls crudo a un bucket de GCP

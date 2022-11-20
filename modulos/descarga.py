@@ -15,10 +15,12 @@ def descargar_archivo(url):
     :param url: La URL del archivo que desea descargar
     """
     try:
-        if os.path.isfile(rf"../Data/sh_ipc_aperturas_{fecha}.xls"):
+        if os.path.isfile(rf"../Data_cruda/sh_ipc_aperturas_{fecha}.xls"):
             print("El archivo ya existe")
         else:
-            response = wget.download(url, rf"../Data/sh_ipc_aperturas_{fecha}.xls")
+            response = wget.download(
+                url, rf"../Data_cruda/sh_ipc_aperturas_{fecha}.xls"
+            )
             print(f"El archivo se descargó correctamente en {response}")
     except Exception as e:
         print(f"Error: {e}")
