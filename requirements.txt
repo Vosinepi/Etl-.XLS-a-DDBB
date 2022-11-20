@@ -5,3 +5,4 @@ SQLAlchemy
 psycopg2==2.9.5
 google.cloud==0.34.0
 google_cloud_storage==2.6.0
+tabulate==0.9.0

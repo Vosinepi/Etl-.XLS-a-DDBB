@@ -19,6 +19,7 @@ Tener la capacidad de actualizar los datos en la base de datos al surgir nuevas 
 - [psycopg2](https://pypi.org/project/psycopg2/)
 - [google.cloud.storage](https://pypi.org/project/google-cloud-storage/)
 - [google-cloud-storage](https://pypi.org/project/google-cloud-storage/)
+- [tabulate](https://pypi.org/project/tabulate/)
 
 ## Uso
 
