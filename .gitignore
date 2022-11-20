@@ -1,2 +1,6 @@
 venv
 credenciales
+pruebas
+
+__init__.py
+__pycache__

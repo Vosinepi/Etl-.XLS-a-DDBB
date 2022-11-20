@@ -18,6 +18,10 @@ region_noreste = rf"../Dataframe/region_noreste_{fecha}.csv"
 region_cuyo = rf"../Dataframe/region_cuyo_{fecha}.csv"
 region_patagonica = rf"../Dataframe/region_patagonica_{fecha}.csv"
 
+# path al csc indice_aperturas
+
+indice_aperturas = rf"../Dataframe/indice_aperturas_{fecha}.csv"
+
 datasets = [
     region_gba,
     region_pampeana,
@@ -26,6 +30,7 @@ datasets = [
     region_cuyo,
     region_patagonica,
     ipc_aperturas,
+    indice_aperturas,
 ]
 
 lista_regiones = [
