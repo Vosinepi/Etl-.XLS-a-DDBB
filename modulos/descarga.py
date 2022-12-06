@@ -14,6 +14,14 @@ def descargar_archivo(url):
 
     :param url: La URL del archivo que desea descargar
     """
+   
+    if os.path.isdir(rf"../Data_cruda/") and os.path.isdir(rf"../Dataframe/"):
+        print("Las carpetas ya existen")
+    else:
+        os.mkdir(rf"../Data_cruda/")
+        os.mkdir(rf"../Dataframe/")
+        print("Se crearon las carpetas correctamente")
+    
     try:
         if os.path.isfile(rf"../Data_cruda/sh_ipc_aperturas_{fecha}.xls"):
             print("El archivo ya existe")
