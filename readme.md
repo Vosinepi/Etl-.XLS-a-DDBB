@@ -1,6 +1,6 @@
 ## Iber Ismael Piovani
 
-# Pequeño ETL para guardar datos desde un archivo XLS online en una base de datos PostgreSQL y volcar los datos en un bucket de GCP
+# ETL para guardar datos desde un archivo XLS online en una base de datos PostgreSQL y volcar los datos en un bucket de GCP
 
 ## Objetivo
 
